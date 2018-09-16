@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700');
+/* Variables */
+/* Functions */
+/* Styles */
+* :before,
+* :after {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'BebasNeueBold';
+  src: url('../font/BebasNeueBold.eot');
+  src: url('../font/BebasNeueBold.eot?#iefix') format('embedded-opentype'), url('../font/BebasNeueBold.woff2') format('woff2'), url('../font/BebasNeueBold.woff') format('woff'), url('../font/BebasNeueBold.ttf') format('truetype'), url('../font/BebasNeueBold.svg#BebasNeueBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #000000;
+}
+body a {
+  text-decoration: none;
+}
+.slider {
+  position: relative;
+}
+.slider .fotorama .fotorama__nav {
+  right: 37.8vw;
+  bottom: 6.9vw;
+}
+.slider .fotorama .fotorama__nav-wrap {
+  height: 0;
+}
+.slider .fotorama .fotorama__nav__frame {
+  margin: 0 0.2vw;
+}
+.slider .fotorama .fotorama__dot {
+  border: 0;
+  border-radius: 50%;
+  width: 0.7vw;
+  height: 0.7vw;
+  background-color: rgba(182, 144, 126, 0.5);
+}
+.slider .fotorama .fotorama__active .fotorama__dot {
+  border: 0;
+  border-radius: 50%;
+  width: 0.7vw;
+  height: 0.7vw;
+  background-color: #b6907e;
+}
+.slider .fotorama .fotorama__wrap:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 7vw;
+  right: 0;
+  background-image: linear-gradient(to right, #000000, rgba(0, 0, 0, 0));
+  content: '';
+}
+.slider .sub {
+  background-color: #0e0e0e;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider .sub > p {
+  margin: 0 0 0 8.9vw;
+  font-family: PT Sans;
+  color: #767676;
+  font-size: 0.8vw;
+  font-style: italic;
+}
+.slider .sub > div {
+  margin: 0 8.9vw 0 0;
+  display: flex;
+  align-items: center;
+}
+.slider .sub > div img {
+  width: 1.2vw;
+}
+.slider .sub > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 3.3vw;
+}
+.slider .sub > div > div > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.6vw;
+  height: 0.6vw;
+  background-color: #b6907e;
+  border-radius: 50%;
+  padding: 0.3vw 0.3vw;
+  font-family: PT Sans;
+  color: #ffffff;
+  font-size: 0.8vw;
+  font-weight: bold;
+  margin: 0 0 0 0.8vw;
+}
+.slider .header {
+  position: absolute;
+  top: 5.9vw;
+  right: 8.9vw;
+  left: 8.9vw;
+  display: flex;
+  justify-content: space-between;
+}
+.slider .header .logo {
+  display: flex;
+  align-items: center;
+}
+.slider .header .logo .p0 {
+  font-family: BebasNeueBold;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.7vw;
+  margin: 0 1.1vw 0 0;
+}
+.slider .header .logo .p1 {
+  font-family: PT Sans;
+  color: #818181;
+  font-size: 0.8vw;
+  font-style: italic;
+}
+.slider .header .menu {
+  width: 32.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 0 5vw;
+}
+.slider .header .menu > a {
+  font-family: BebasNeueBold;
+  color: #ffffff;
+  font-size: 1.1vw;
+  font-weight: 400;
+  transition: all 0.2s;
+}
+.slider .header .menu > a:hover {
+  color: #977869;
+  border-bottom: 2px solid currentColor;
+}
+.slider .header .phone {
+  display: flex;
+  align-items: center;
+}
+.slider .header .phone > img {
+  width: 1.4vw;
+  margin: 0 1.5vw 0 0;
+}
+.slider .header .phone > p {
+  font-family: BebasNeueBold;
+  color: #ffffff;
+  font-size: 1.4vw;
+  font-weight: 400;
+}
+.slider .cont {
+  position: absolute;
+  top: 17vw;
+  left: 8.9vw;
+  display: flex;
+  flex-direction: column;
+}
+.slider .cont > h1 {
+  margin: 0 55vw 0 0;
+  font-family: BebasNeueBold;
+  color: #ffffff;
+  font-size: 4.7vw;
+  font-weight: 400;
+}
+.slider .cont > div {
+  display: flex;
+  margin: 3.3vw 0 0 0;
+}
+.slider .cont > div > a {
+  font-family: BebasNeueBold;
+  color: #977869;
+  font-size: 1.3vw;
+  font-weight: 400;
+  border: 2px solid currentColor;
+  padding: 0.9vw 2.1vw;
+  margin: 0 1.7vw 0 0;
+}
+.services {
+  position: relative;
+}
+.services .bg > img {
+  width: 100%;
+}
+.services .bg:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 24vw;
+  background-image: linear-gradient(to left, #000000, rgba(0, 0, 0, 0));
+  content: '';
+}
+.services .fotorama .fotorama__wrap {
+  position: absolute;
+  top: 10.1vw;
+  left: 49.2vw;
+}
+.services .fotorama .fotorama__stage {
+  height: 40vw;
+}
+.services .fotorama .fotorama__arr--prev {
+  background: url('../img/services/cont/1.svg') no-repeat center;
+  top: 4vw;
+  height: 1.5vw;
+  width: 1.5vw;
+  background-size: contain;
+}
+.services .fotorama .fotorama__arr--next {
+  left: 3.7vw;
+  background: url('../img/services/cont/2.svg') no-repeat center;
+  top: 4vw;
+  height: 1.5vw;
+  width: 1.5vw;
+  background-size: contain;
+}
+.services .fotorama .cont > h1 {
+  position: absolute;
+  top: 6.5vw;
+  margin: 0;
+  font-family: BebasNeueBold;
+  color: #ffffff;
+  font-size: 2.8vw;
+  font-weight: 400;
+}
+.services .fotorama .cont > p {
+  position: absolute;
+  top: 10.8vw;
+  margin: 0;
+  font-family: PT Sans;
+  color: #858585;
+  font-size: 1.4vw;
+  font-weight: 400;
+  line-height: 2.45vw;
+}
+.collection {
+  position: relative;
+  top: 3.9vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collection > h1 {
+  margin: 0 0 0 8.9vw;
+  font-family: BebasNeueBold;
+  color: #f5f5f5;
+  font-size: 2.8vw;
+  font-weight: 400;
+}
+.collection > div {
+  display: flex;
+  margin: 0 8.9vw 0 0;
+}
+.collection > div > div > input {
+  display: none;
+}
+.collection > div > div > input:checked + label {
+  border-bottom: 0.7vw solid #b6907e;
+}
+.collection > div > div > input:checked ~ .fotorama .fotorama__wrap {
+  display: block;
+}
+.collection > div > div > label {
+  font-family: PT Sans;
+  color: #f5f5f5;
+  font-size: 1.2vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 0 0 2.5vw;
+  padding: 0 0.2vw;
+  cursor: pointer;
+  height: 0.7vw;
+}
+.collection > div > div .fotorama .fotorama__wrap {
+  display: none;
+  position: absolute;
+  top: 6.5vw;
+  left: 0;
+}
+.collection > div > div .fotorama .fotorama__stage {
+  height: 40vw;
+}
+.collection > div > div .fotorama .fotorama__arr--prev {
+  margin-left: 2.8vw;
+  background: url('../img/collection/arrow/1.svg') no-repeat center;
+  top: 18vw;
+  height: 3vw;
+  width: 3vw;
+  background-size: contain;
+}
+.collection > div > div .fotorama .fotorama__arr--next {
+  margin-right: 2.8vw;
+  background: url('../img/collection/arrow/2.svg') no-repeat center;
+  top: 18vw;
+  height: 3vw;
+  width: 3vw;
+  background-size: contain;
+}
+.collection > div > div .fotorama .cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 8.9vw;
+}
+.collection > div > div .fotorama .cont > div {
+  border: 1px solid #2b2b2b;
+  padding: 3vw 4.5vw 2.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 31vw;
+  width: 15vw;
+}
+.collection > div > div .fotorama .cont > div > img {
+  height: 23.4vw;
+}
+.collection > div > div .fotorama .cont > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.6vw;
+}
+.collection > div > div .fotorama .cont > div > div .p0 {
+  margin: 0;
+  font-family: BebasNeueBold;
+  color: #f5f5f5;
+  font-size: 1.8vw;
+  font-weight: 400;
+}
+.collection > div > div .fotorama .cont > div > div .p1 {
+  margin: 0;
+  font-family: PT Sans;
+  color: #b6907e;
+  font-size: 1.4vw;
+  font-weight: 700;
+}
+.brand {
+  position: relative;
+  top: 48.2vw;
+  display: flex;
+  align-items: center;
+  height: 16.2vw;
+  background-color: #0e0e0e;
+}
+.brand > div {
+  margin: 0 8.9vw;
+}
+.brand > div > img {
+  width: 100%;
+}
+.say {
+  position: relative;
+  top: 50.6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.say > h1 {
+  font-family: BebasNeueBold;
+  color: #ffffff;
+  font-size: 2.8vw;
+  font-weight: 400;
+}
+.say .fotorama .fotorama__wrap {
+  position: absolute;
+  left: 0;
+  top: 12.1vw;
+}
+.say .fotorama .fotorama__stage {
+  height: 20vw;
+}
+.say .fotorama .fotorama__nav-wrap {
+  height: 0;
+}
+.say .fotorama .fotorama__nav__frame {
+  margin: 0 0.2vw;
+}
+.say .fotorama .fotorama__dot {
+  border: 0;
+  border-radius: 50%;
+  width: 0.7vw;
+  height: 0.7vw;
+  background-color: rgba(182, 144, 126, 0.5);
+}
+.say .fotorama .fotorama__active .fotorama__dot {
+  border: 0;
+  border-radius: 50%;
+  width: 0.7vw;
+  height: 0.7vw;
+  background-color: #b6907e;
+}
+.say .fotorama .cont {
+  display: flex;
+  margin: 0 8.9vw;
+}
+.say .fotorama .cont > div {
+  display: flex;
+  align-items: flex-start;
+}
+.say .fotorama .cont > div > img {
+  width: 7vw;
+  border-radius: 0.3vw;
+}
+.say .fotorama .cont > div > div {
+  margin: 0 0 0 3.4vw;
+}
+.say .fotorama .cont > div > div > h2 {
+  font-family: BebasNeueBold;
+  color: #ffffff;
+  font-size: 2vw;
+  font-weight: 400;
+  margin: 1.4vw 0 0 0;
+}
+.say .fotorama .cont > div > div > p {
+  font-family: PT Sans;
+  color: #767676;
+  font-size: 1vw;
+  font-weight: 400;
+  line-height: 2.1vw;
+  margin: 1.6vw 8.9vw 0 0;
+}
+.footer {
+  position: relative;
+  top: 82.5vw;
+  height: 26.7vw;
+  background-color: #0e0e0e;
+}
+.footer > div {
+  margin: 0 8.9vw;
+  position: absolute;
+  top: 5.2vw;
+  left: 0;
+  right: 0;
+  bottom: 3.3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer > div .d0 {
+  display: flex;
+  justify-content: space-between;
+}
+.footer > div .d0 .logo .p0 {
+  font-family: BebasNeueBold;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 2vw;
+  margin: 0 0 0.2vw 0;
+}
+.footer > div .d0 .logo .p1 {
+  font-family: PT Sans;
+  color: #818181;
+  font-size: 0.8vw;
+  font-style: italic;
+}
+.footer > div .d0 .menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 9.5vw;
+}
+.footer > div .d0 .menu > h1 {
+  font-family: BebasNeueBold;
+  color: #ffffff;
+  font-size: 1.7vw;
+  font-weight: 400;
+  margin: 0 0 2.5vw 0;
+}
+.footer > div .d0 .menu > div {
+  display: flex;
+}
+.footer > div .d0 .menu > div > div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 7.5vw 0 0;
+}
+.footer > div .d0 .menu > div > div > a {
+  font-family: BebasNeueBold;
+  color: #5e5d5d;
+  font-size: 1vw;
+  font-weight: 400;
+  margin: 0 0 1.6vw 0;
+}
+.footer > div .d0 .cont {
+  display: flex;
+  flex-direction: column;
+}
+.footer > div .d0 .cont > h1 {
+  font-family: BebasNeueBold;
+  color: #ffffff;
+  font-size: 1.7vw;
+  font-weight: 400;
+  margin: 0 0 2.1vw 0;
+}
+.footer > div .d0 .cont > div {
+  display: flex;
+}
+.footer > div .d0 .cont > div > input {
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #494949;
+  font-family: PT Sans;
+  font-size: 1vw;
+  font-weight: 400;
+  padding: 0 1.7vw;
+}
+.footer > div .d0 .cont > div > input::placeholder {
+  color: #494949;
+}
+.footer > div .d0 .cont > div > a {
+  background-color: #b6907e;
+  font-family: BebasNeueBold;
+  color: #705142;
+  font-size: 1.3vw;
+  font-weight: 400;
+  text-align: left;
+  padding: 0.8vw 3.4vw;
+}
+.footer > div .d1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer > div .d1 > p {
+  font-family: PT Sans;
+  color: #494949;
+  font-size: 0.95vw;
+  font-weight: 400;
+}
+.footer > div .d1 > div {
+  display: flex;
+  align-items: center;
+}
+.footer > div .d1 > div > img {
+  width: 1vw;
+  margin: 0 0 0 1.3vw;
+}
