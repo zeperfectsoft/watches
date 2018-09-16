@@ -4,7 +4,8 @@
 /* Styles */
 * :before,
 * :after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 @font-face {
   font-family: 'BebasNeueBold';
@@ -56,6 +57,9 @@ body a {
   bottom: 0;
   left: 7vw;
   right: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000000), to(rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(left, #000000, rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, #000000, rgba(0, 0, 0, 0));
   background-image: linear-gradient(to right, #000000, rgba(0, 0, 0, 0));
   content: '';
 }
@@ -66,9 +70,15 @@ body a {
   right: 0;
   left: 0;
   height: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .slider .sub > p {
   margin: 0 0 0 8.9vw;
@@ -79,22 +89,38 @@ body a {
 }
 .slider .sub > div {
   margin: 0 8.9vw 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .slider .sub > div img {
   width: 1.2vw;
 }
 .slider .sub > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 3.3vw;
 }
 .slider .sub > div > div > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 0.6vw;
   height: 0.6vw;
   background-color: #b6907e;
@@ -111,12 +137,20 @@ body a {
   top: 5.9vw;
   right: 8.9vw;
   left: 8.9vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .slider .header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .slider .header .logo .p0 {
   font-family: BebasNeueBold;
@@ -133,9 +167,15 @@ body a {
 }
 .slider .header .menu {
   width: 32.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 0 0 5vw;
 }
 .slider .header .menu > a {
@@ -143,6 +183,8 @@ body a {
   color: #ffffff;
   font-size: 1.1vw;
   font-weight: 400;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 .slider .header .menu > a:hover {
@@ -150,8 +192,12 @@ body a {
   border-bottom: 2px solid currentColor;
 }
 .slider .header .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .slider .header .phone > img {
   width: 1.4vw;
@@ -167,8 +213,13 @@ body a {
   position: absolute;
   top: 17vw;
   left: 8.9vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .slider .cont > h1 {
   margin: 0 55vw 0 0;
@@ -178,6 +229,8 @@ body a {
   font-weight: 400;
 }
 .slider .cont > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 3.3vw 0 0 0;
 }
@@ -203,6 +256,9 @@ body a {
   bottom: 0;
   left: 0;
   right: 24vw;
+  background-image: -webkit-gradient(linear, right top, left top, from(#000000), to(rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(right, #000000, rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(right, #000000, rgba(0, 0, 0, 0));
   background-image: linear-gradient(to left, #000000, rgba(0, 0, 0, 0));
   content: '';
 }
@@ -251,9 +307,15 @@ body a {
 .collection {
   position: relative;
   top: 3.9vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .collection > h1 {
   margin: 0 0 0 8.9vw;
@@ -263,6 +325,8 @@ body a {
   font-weight: 400;
 }
 .collection > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 8.9vw 0 0;
 }
@@ -313,18 +377,33 @@ body a {
   background-size: contain;
 }
 .collection > div > div .fotorama .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 8.9vw;
 }
 .collection > div > div .fotorama .cont > div {
   border: 1px solid #2b2b2b;
   padding: 3vw 4.5vw 2.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 31vw;
   width: 15vw;
 }
@@ -332,10 +411,19 @@ body a {
   height: 23.4vw;
 }
 .collection > div > div .fotorama .cont > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 4.6vw;
 }
 .collection > div > div .fotorama .cont > div > div .p0 {
@@ -355,8 +443,12 @@ body a {
 .brand {
   position: relative;
   top: 48.2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 16.2vw;
   background-color: #0e0e0e;
 }
@@ -369,9 +461,16 @@ body a {
 .say {
   position: relative;
   top: 50.6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .say > h1 {
   font-family: BebasNeueBold;
@@ -408,10 +507,14 @@ body a {
   background-color: #b6907e;
 }
 .say .fotorama .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 8.9vw;
 }
 .say .fotorama .cont > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .say .fotorama .cont > div > img {
@@ -449,13 +552,24 @@ body a {
   left: 0;
   right: 0;
   bottom: 3.3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer > div .d0 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer > div .d0 .logo .p0 {
   font-family: BebasNeueBold;
@@ -471,8 +585,13 @@ body a {
   font-style: italic;
 }
 .footer > div .d0 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 0 0 9.5vw;
 }
 .footer > div .d0 .menu > h1 {
@@ -483,11 +602,18 @@ body a {
   margin: 0 0 2.5vw 0;
 }
 .footer > div .d0 .menu > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .footer > div .d0 .menu > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 7.5vw 0 0;
 }
 .footer > div .d0 .menu > div > div > a {
@@ -498,8 +624,13 @@ body a {
   margin: 0 0 1.6vw 0;
 }
 .footer > div .d0 .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .footer > div .d0 .cont > h1 {
   font-family: BebasNeueBold;
@@ -509,6 +640,8 @@ body a {
   margin: 0 0 2.1vw 0;
 }
 .footer > div .d0 .cont > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .footer > div .d0 .cont > div > input {
@@ -519,6 +652,15 @@ body a {
   font-size: 1vw;
   font-weight: 400;
   padding: 0 1.7vw;
+}
+.footer > div .d0 .cont > div > input::-webkit-input-placeholder {
+  color: #494949;
+}
+.footer > div .d0 .cont > div > input:-ms-input-placeholder {
+  color: #494949;
+}
+.footer > div .d0 .cont > div > input::-ms-input-placeholder {
+  color: #494949;
 }
 .footer > div .d0 .cont > div > input::placeholder {
   color: #494949;
@@ -533,9 +675,15 @@ body a {
   padding: 0.8vw 3.4vw;
 }
 .footer > div .d1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer > div .d1 > p {
   font-family: PT Sans;
@@ -544,8 +692,12 @@ body a {
   font-weight: 400;
 }
 .footer > div .d1 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer > div .d1 > div > img {
   width: 1vw;
