@@ -190,6 +190,9 @@ body a {
   padding: 0.9vw 2.1vw;
   margin: 0 1.7vw 0 0;
 }
+#slider .cont > div > a:hover {
+  background-color: rgba(151, 120, 105, 0.1);
+}
 #services {
   position: relative;
 }
