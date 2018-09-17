@@ -508,10 +508,10 @@ body a {
   font-weight: 400;
   margin: 0 0 2.1vw 0;
 }
-.footer > div .d0 .cont > div {
+.footer > div .d0 .cont > form {
   display: flex;
 }
-.footer > div .d0 .cont > div > input {
+.footer > div .d0 .cont > form > input {
   color: #ffffff;
   background-color: transparent;
   border: 1px solid #494949;
@@ -520,16 +520,16 @@ body a {
   font-weight: 400;
   padding: 0 1.7vw;
 }
-.footer > div .d0 .cont > div > input::placeholder {
+.footer > div .d0 .cont > form > input::placeholder {
   color: #494949;
 }
-.footer > div .d0 .cont > div > a {
+.footer > div .d0 .cont > form > button {
   background-color: #b6907e;
+  border: none;
   font-family: BebasNeueBold;
   color: #705142;
   font-size: 1.3vw;
   font-weight: 400;
-  text-align: left;
   padding: 0.8vw 3.4vw;
 }
 .footer > div .d1 {
