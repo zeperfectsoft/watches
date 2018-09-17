@@ -35,7 +35,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="slider">
+	<div id="slider">
 		<div
 			class="fotorama"
 			data-transition="crossfade"
@@ -52,12 +52,39 @@
 		<div class="sub">
 			<p>Custom Logo Watches & More, Free Shipping & Returns</p>
 			<div>
-				<img src="img/slider/sub/1.svg" alt="">
+				<img class="modal-btn" id="search-btn" src="img/slider/sub/1.svg" alt="">
 				<div>
 					<img src="img/slider/sub/2.svg" alt="">
 					<p>3</p>
 				</div>
-				<img src="img/slider/sub/3.svg" alt="">
+				<img class="modal-btn" id="enter-btn" src="img/slider/sub/3.svg" alt="">
+			</div>
+		</div>
+		<div class="modal" id="search">
+			<div>
+				<form class="form" action="">
+					<div class="item-form">
+						<input class="item-form" type="text" placeholder="Search...">
+						<button class="item-form">Search</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="modal" id="enter">
+			<div>
+				<form class="form" action="">
+					<div class="item-form">
+						<label class="item-form" for="">Login:</label>
+						<input class="item-form" type="text" placeholder="Login">
+					</div>
+					<div class="item-form">
+						<label class="item-form" for="">Password:</label>
+						<input class="item-form" type="password" placeholder="Password">
+					</div>
+					<div class="item-form">
+						<button class="item-form">Enter</button>
+					</div>
+				</form>
 			</div>
 		</div>
 		<div class="header">
@@ -85,7 +112,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="services">
+	<div id="services">
 		<div class="bg">
 			<img src="img/services/bg/1.jpg" alt="">
 		</div>
@@ -109,7 +136,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="collection">
+	<div id="collection">
 		<h1>Collections</h1>
 		<div>
 			<div>
@@ -282,12 +309,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="brand">
+	<div id="brand">
 		<div>
 			<img src="img/brand/1.png" alt="">
 		</div>
 	</div>
-	<div class="say">
+	<div id="say">
 		<h1>What Customers Are Saying</h1>
 		<div
 			class="fotorama"
@@ -332,7 +359,7 @@
 			</div>			
 		</div>
 	</div>
-	<div class="footer">
+	<div id="footer">
 		<div>
 			<div class="d0">
 				<div class="logo">
@@ -355,9 +382,11 @@
 				</div>
 				<div class="cont">
 					<h1>Sign Up For Our Newsletter</h1>
-					<form action="">						
-						<input type="text" placeholder="Enter email">
-						<button>send</button>
+					<form class="form" action="">
+						<div>
+							<input type="text" placeholder="Enter email">
+							<button>send</button>
+						</div>					
 					</form>
 				</div>
 			</div>
@@ -376,5 +405,19 @@
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/fotorama.css">
 	<script src="js/fotorama.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#search-btn').click(function() {
+				$('#search').fadeIn('fast');
+			});
+			$('#enter-btn').click(function() {
+				$('#enter').fadeIn('fast');
+			});
+			$('.modal').click(function(e) {
+				if($(e.target).attr('class') != "form" & $(e.target).attr('class') != 'item-form')
+				$('.modal').fadeOut('fast');
+			});
+		});
+	</script>
 </body>
 </html>
