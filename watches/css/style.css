@@ -253,111 +253,113 @@ body a {
 }
 #collection {
   position: relative;
-  top: 3.9vw;
+  top: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 8.9vw;
+}
+#collection > .d0 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
-#collection > h1 {
-  margin: 0 0 0 8.9vw;
+#collection > .d0 > h1 {
   font-family: BebasNeueBold;
   color: #f5f5f5;
   font-size: 2.8vw;
   font-weight: 400;
 }
-#collection > div {
+#collection > .d0 > div {
+  width: 11.7vw;
   display: flex;
-  margin: 0 8.9vw 0 0;
+  justify-content: space-between;
 }
-#collection > div > div > input {
-  display: none;
+@media screen and (max-width: 640px) {
+  #collection > .d0 > div {
+    width: 17.55vw;
+  }
 }
-#collection > div > div > input:checked + label {
-  border-bottom: 0.7vw solid #b6907e;
-}
-#collection > div > div > input:checked ~ .fotorama .fotorama__wrap {
-  display: block;
-}
-#collection > div > div > label {
+#collection > .d0 > div > p {
   font-family: PT Sans;
   color: #f5f5f5;
   font-size: 1.2vw;
   font-weight: 700;
   text-transform: uppercase;
-  display: inline-block;
-  margin: 0 0 0 2.5vw;
-  padding: 0 0.2vw;
   cursor: pointer;
   height: 0.7vw;
 }
-#collection > div > div .fotorama .fotorama__wrap {
-  display: none;
+@media screen and (max-width: 640px) {
+  #collection > .d0 > div > p {
+    font-size: 1.8vw;
+  }
+}
+#collection > .owl-carousel {
   position: absolute;
-  top: 6.5vw;
-  left: 0;
+  top: 8.5vw;
+  width: 85vw;
 }
-#collection > div > div .fotorama .fotorama__stage {
-  height: 40vw;
-}
-#collection > div > div .fotorama .fotorama__arr--prev {
-  margin-left: 2.8vw;
-  background: url('../img/collection/arrow/1.svg') no-repeat center;
-  top: 18vw;
-  height: 3vw;
-  width: 3vw;
-  background-size: contain;
-}
-#collection > div > div .fotorama .fotorama__arr--next {
-  margin-right: 2.8vw;
-  background: url('../img/collection/arrow/2.svg') no-repeat center;
-  top: 18vw;
-  height: 3vw;
-  width: 3vw;
-  background-size: contain;
-}
-#collection > div > div .fotorama .cont {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 8.9vw;
-}
-#collection > div > div .fotorama .cont > div {
+#collection > .owl-carousel .d0 {
   border: 1px solid #2b2b2b;
-  padding: 3vw 4.5vw 2.5vw;
+  padding: 3vw 0 2.5vw 0;
+  margin: 0 2vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 31vw;
+}
+@media screen and (max-width: 640px) {
+  #collection > .owl-carousel .d0 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+#collection > .owl-carousel .d0 > img {
+  height: 23.4vw;
   width: 15vw;
 }
-#collection > div > div .fotorama .cont > div > img {
-  height: 23.4vw;
+@media screen and (max-width: 640px) {
+  #collection > .owl-carousel .d0 > img {
+    height: 32.76vw;
+    width: 21vw;
+  }
 }
-#collection > div > div .fotorama .cont > div > div {
+#collection > .owl-carousel .d0 > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 4.6vw;
 }
-#collection > div > div .fotorama .cont > div > div .p0 {
+#collection > .owl-carousel .d0 > div .p0 {
   margin: 0;
   font-family: BebasNeueBold;
   color: #f5f5f5;
   font-size: 1.8vw;
   font-weight: 400;
 }
-#collection > div > div .fotorama .cont > div > div .p1 {
+@media screen and (max-width: 640px) {
+  #collection > .owl-carousel .d0 > div .p0 {
+    font-size: 3.6vw;
+  }
+}
+#collection > .owl-carousel .d0 > div .p1 {
   margin: 0;
   font-family: PT Sans;
   color: #b6907e;
   font-size: 1.4vw;
   font-weight: 700;
 }
+@media screen and (max-width: 640px) {
+  #collection > .owl-carousel .d0 > div .p1 {
+    font-size: 2.8vw;
+  }
+}
 #brand {
   position: relative;
-  top: 48.2vw;
+  top: 44.5vw;
   display: flex;
   align-items: center;
   height: 16.2vw;
@@ -371,7 +373,7 @@ body a {
 }
 #say {
   position: relative;
-  top: 50.6vw;
+  top: 46.9vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -441,7 +443,7 @@ body a {
 }
 #footer {
   position: relative;
-  top: 82.5vw;
+  top: 78.8vw;
   height: 26.7vw;
   background-color: #0e0e0e;
 }
@@ -594,4 +596,7 @@ body a {
 }
 .modal-btn {
   cursor: pointer;
+}
+#latest-btn {
+  border-bottom: 0.7vw solid #b6907e;
 }
