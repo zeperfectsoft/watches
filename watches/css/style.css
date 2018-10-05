@@ -296,7 +296,7 @@ body a {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
   #collection > .d0 > div {
     width: 17.55vw;
   }
@@ -310,17 +310,17 @@ body a {
   cursor: pointer;
   height: 0.7vw;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
   #collection > .d0 > div > p {
     font-size: 1.8vw;
   }
 }
-#collection > .owl-carousel {
+#collection > .collection-slider {
   position: absolute;
   top: 8.5vw;
   width: 85vw;
 }
-#collection > .owl-carousel .d0 {
+#collection > .collection-slider .d0 {
   border: 1px solid #2b2b2b;
   padding: 3vw 0 2.5vw 0;
   margin: 0 2vw;
@@ -330,50 +330,50 @@ body a {
   justify-content: space-between;
   height: 31vw;
 }
-@media screen and (max-width: 640px) {
-  #collection > .owl-carousel .d0 {
+@media screen and (max-width: 800px) {
+  #collection > .collection-slider .d0 {
     flex-direction: row;
     justify-content: space-around;
   }
 }
-#collection > .owl-carousel .d0 > img {
+#collection > .collection-slider .d0 > img {
   height: 23.4vw;
   width: 15vw;
 }
-@media screen and (max-width: 640px) {
-  #collection > .owl-carousel .d0 > img {
+@media screen and (max-width: 800px) {
+  #collection > .collection-slider .d0 > img {
     height: 32.76vw;
     width: 21vw;
   }
 }
-#collection > .owl-carousel .d0 > div {
+#collection > .collection-slider .d0 > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 4.6vw;
 }
-#collection > .owl-carousel .d0 > div .p0 {
+#collection > .collection-slider .d0 > div .p0 {
   margin: 0;
   font-family: BebasNeueBold;
   color: #f5f5f5;
   font-size: 1.8vw;
   font-weight: 400;
 }
-@media screen and (max-width: 640px) {
-  #collection > .owl-carousel .d0 > div .p0 {
+@media screen and (max-width: 800px) {
+  #collection > .collection-slider .d0 > div .p0 {
     font-size: 3.6vw;
   }
 }
-#collection > .owl-carousel .d0 > div .p1 {
+#collection > .collection-slider .d0 > div .p1 {
   margin: 0;
   font-family: PT Sans;
   color: #b6907e;
   font-size: 1.4vw;
   font-weight: 700;
 }
-@media screen and (max-width: 640px) {
-  #collection > .owl-carousel .d0 > div .p1 {
+@media screen and (max-width: 800px) {
+  #collection > .collection-slider .d0 > div .p1 {
     font-size: 2.8vw;
   }
 }
@@ -404,62 +404,52 @@ body a {
   font-size: 2.8vw;
   font-weight: 400;
 }
-#say .fotorama .fotorama__wrap {
+#say > .say-slider {
   position: absolute;
-  left: 0;
   top: 12.1vw;
+  width: 81vw;
 }
-#say .fotorama .fotorama__stage {
-  height: 20vw;
-}
-#say .fotorama .fotorama__nav-wrap {
-  height: 0;
-}
-#say .fotorama .fotorama__nav__frame {
-  margin: 0 0.2vw;
-}
-#say .fotorama .fotorama__dot {
-  border: 0;
-  border-radius: 50%;
-  width: 0.7vw;
-  height: 0.7vw;
-  background-color: rgba(182, 144, 126, 0.5);
-}
-#say .fotorama .fotorama__active .fotorama__dot {
-  border: 0;
-  border-radius: 50%;
-  width: 0.7vw;
-  height: 0.7vw;
-  background-color: #b6907e;
-}
-#say .fotorama .cont {
-  display: flex;
-  margin: 0 8.9vw;
-}
-#say .fotorama .cont > div {
+#say > .say-slider .d0 {
   display: flex;
 }
-#say .fotorama .cont > div > img {
+#say > .say-slider .d0 > img {
   height: 6.9vw;
+  width: 6.9vw;
   border-radius: 0.3vw;
 }
-#say .fotorama .cont > div > div {
+@media screen and (max-width: 800px) {
+  #say > .say-slider .d0 > img {
+    height: 13.8vw;
+    width: 13.8vw;
+  }
+}
+#say > .say-slider .d0 > div {
   margin: 0 0 0 3.4vw;
 }
-#say .fotorama .cont > div > div > h2 {
+#say > .say-slider .d0 > div > h2 {
   font-family: BebasNeueBold;
   color: #ffffff;
   font-size: 2vw;
   font-weight: 400;
   margin: 1.4vw 0 0 0;
 }
-#say .fotorama .cont > div > div > p {
+@media screen and (max-width: 800px) {
+  #say > .say-slider .d0 > div > h2 {
+    font-size: 3vw;
+  }
+}
+#say > .say-slider .d0 > div > p {
   font-family: PT Sans;
   color: #767676;
   font-size: 1vw;
   font-weight: 400;
   line-height: 2.1vw;
   margin: 1.6vw 8.9vw 0 0;
+}
+@media screen and (max-width: 800px) {
+  #say > .say-slider .d0 > div > p {
+    font-size: 1.5vw;
+  }
 }
 #footer {
   position: relative;

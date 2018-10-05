@@ -144,7 +144,7 @@
 				<p id="popular-btn">Popular</p>
 			</div>
 		</div>
-		<div id="latest" class="owl-carousel owl-theme">
+		<div id="latest" class="collection-slider owl-carousel">
 			<div class="d0">
 				<img src="img/collection/cont/1.png" alt="">
 				<div>
@@ -188,7 +188,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="popular" class="owl-carousel owl-theme">
+		<div id="popular" class="collection-slider owl-carousel">
 			<div class="d0">
 				<img src="img/collection/cont/1.png" alt="">
 				<div>
@@ -240,47 +240,35 @@
 	</div>
 	<div id="say">
 		<h1>What Customers Are Saying</h1>
-		<div
-			class="fotorama"
-			data-width="100%"
-			data-transition="slide"
-			data-autoplay="false"
-			data-arrows="false"
-			data-click="false"
-			data-swipe="false"
-			data-trackpad="false">
-			<div class="cont">
+		<div class="say-slider owl-carousel">
+			<div class="d0">
+				<img src="img/say/1.jpg" alt="">
 				<div>
-					<img src="img/say/1.jpg" alt="">
-					<div>
-						<h2>Amanda Smith</h2>
-						<p>As many of you know, our company has a wide field of activity: we are engaged in the development of products, publish design and code related articles, and support the Market, where designers publish their products to sell.</p>
-					</div>
-				</div>
-				<div>
-					<img src="img/say/2.jpg" alt="">
-					<div>
-						<h2>Sandra Willims</h2>
-						<p>As many of you know, our company has a wide field of activity: we are engaged in the development of products, publish design and code related articles, and support the Market, where designers publish their products to sell.</p>
-					</div>
+					<h2>Amanda Smith</h2>
+					<p>As many of you know, our company has a wide field of activity: we are engaged in the development of products, publish design and code related articles, and support the Market, where designers publish their products to sell.</p>
 				</div>
 			</div>
-			<div class="cont">
+			<div class="d0">
+				<img src="img/say/2.jpg" alt="">
 				<div>
-					<img src="img/say/2.jpg" alt="">
-					<div>
-						<h2>Sandra Willims</h2>
-						<p>As many of you know, our company has a wide field of activity: we are engaged in the development of products, publish design and code related articles, and support the Market, where designers publish their products to sell.</p>
-					</div>
+					<h2>Sandra Willims</h2>
+					<p>As many of you know, our company has a wide field of activity: we are engaged in the development of products, publish design and code related articles, and support the Market, where designers publish their products to sell.</p>
 				</div>
+			</div>
+			<div class="d0">
+				<img src="img/say/1.jpg" alt="">
 				<div>
-					<img src="img/say/1.jpg" alt="">
-					<div>
-						<h2>Amanda Smith</h2>
-						<p>As many of you know, our company has a wide field of activity: we are engaged in the development of products, publish design and code related articles, and support the Market, where designers publish their products to sell.</p>
-					</div>
+					<h2>Amanda Smith</h2>
+					<p>As many of you know, our company has a wide field of activity: we are engaged in the development of products, publish design and code related articles, and support the Market, where designers publish their products to sell.</p>
 				</div>
-			</div>			
+			</div>
+			<div class="d0">
+				<img src="img/say/2.jpg" alt="">
+				<div>
+					<h2>Sandra Willims</h2>
+					<p>As many of you know, our company has a wide field of activity: we are engaged in the development of products, publish design and code related articles, and support the Market, where designers publish their products to sell.</p>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div id="footer">
@@ -331,17 +319,29 @@
 	<script src="owl-carousel/owl.carousel.min.js"></script>
 	<script>
 		$(document).ready(function() {
-			$(".owl-carousel").owlCarousel({
-			     nav: true,
-			     dots: false,
-			     responsive: {
-			         0: {
-			             items: 1
-			         },
-			         641: {
-			             items: 3
-			         },
-			     }
+			$(".collection-slider").owlCarousel( {
+				nav: true,
+				dots: false,
+				responsive: {
+					0: {
+						items: 1
+					},
+					801: {
+						items: 3
+					},
+				}
+			});
+			$(".say-slider").owlCarousel( {
+				nav: true,
+				dots: true,
+				responsive: {
+					0: {
+						items: 1
+					},
+					801: {
+						items: 2
+					},
+				}
 			});
 			$('#popular').hide();
 			$('#search-btn').click(function() {
