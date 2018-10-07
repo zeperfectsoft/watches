@@ -26,25 +26,17 @@
   font-weight: normal;
   font-style: italic;
 }
-:root {
-  --m: 1;
-  --f-d: column;
-  --f-d_: row;
-  --j-c: space-between;
-  --a-i: center;
-}
-@media screen and (max-width: 800px) {
-  :root {
-    --m: 1.4;
-    --f-d: row;
-    --f-d_: column;
-    --j-c: space-around;
-    --a-i: flex-start;
-  }
+* {
+  font-size: 1vw;
 }
 * :before,
 * :after {
   box-sizing: border-box;
+}
+@media screen and (max-width: 800px) {
+  * {
+    font-size: 1.4vw;
+  }
 }
 body {
   margin: 0;
@@ -116,28 +108,28 @@ body a {
   align-items: center;
 }
 #slider .sub > div img {
-  width: calc(var(--m)*var(--m)*1.2vw);
+  width: 1.2rem;
 }
 #slider .sub > div > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 calc(var(--m)*var(--m)*3.3vw);
+  margin: 0 3.3rem;
 }
 #slider .sub > div > div > p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(var(--m)*var(--m)*0.6vw);
-  height: calc(var(--m)*var(--m)*0.6vw);
+  width: 0.6rem;
+  height: 0.6rem;
   background-color: #b6907e;
   border-radius: 50%;
-  padding: calc(var(--m)*var(--m)*0.3vw) calc(var(--m)*var(--m)*0.3vw);
+  padding: 0.3rem 0.3rem;
   font-family: PT Sans;
   color: #ffffff;
-  font-size: calc(var(--m)*var(--m)*0.8vw);
+  font-size: 0.8rem;
   font-weight: bold;
-  margin: 0 0 0 calc(var(--m)*var(--m)*0.8vw);
+  margin: 0 0 0 0.8rem;
 }
 #slider .header {
   position: absolute;
@@ -146,7 +138,7 @@ body a {
   left: 8.9vw;
   display: flex;
   justify-content: space-between;
-  align-items: var(--a-i);
+  align-items: center;
 }
 #slider .header .logo {
   display: flex;
@@ -168,7 +160,7 @@ body a {
 #slider .header .menu {
   width: 32.5vw;
   display: flex;
-  flex-direction: var(--f-d_);
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 0 0 0 5vw;
@@ -176,7 +168,7 @@ body a {
 #slider .header .menu > a {
   font-family: BebasNeueBold;
   color: #ffffff;
-  font-size: calc(var(--m)*var(--m)*1.1vw);
+  font-size: 1.1rem;
   font-weight: 400;
   transition: all 0.2s;
   margin: 0 0 1vw 0;
@@ -191,24 +183,25 @@ body a {
   align-items: center;
 }
 #slider .header .phone > img {
-  width: calc(var(--m)*var(--m)*1.4vw);
-  margin: 0 calc(var(--m)*var(--m)*1.5vw) 0 0;
+  width: 1.4rem;
+  margin: 0 1.5rem 0 0;
 }
 #slider .header .phone > p {
   font-family: BebasNeueBold;
   color: #ffffff;
-  font-size: calc(var(--m)*var(--m)*1.4vw);
+  font-size: 1.4rem;
   font-weight: 400;
 }
 #slider .cont {
   position: absolute;
-  top: calc(17vw/var(--m));
+  top: 17vw;
   left: 8.9vw;
   display: flex;
   flex-direction: column;
 }
 #slider .cont > h1 {
-  margin: 0 55vw 0 0;
+  margin: 0;
+  width: 32vw;
   font-family: BebasNeueBold;
   color: #ffffff;
   font-size: 4.7vw;
@@ -216,17 +209,21 @@ body a {
 }
 #slider .cont > div {
   display: flex;
-  flex-direction: var(--f-d_);
   align-items: flex-start;
   margin: 3.3vw 0 0 0;
+}
+@media screen and (max-width: 800px) {
+  #slider .cont > div {
+    flex-direction: column;
+  }
 }
 #slider .cont > div > a {
   font-family: BebasNeueBold;
   color: #977869;
-  font-size: calc(var(--m)*1.3vw);
+  font-size: 1.3rem;
   font-weight: 400;
   border: 2px solid currentColor;
-  padding: calc(var(--m)*0.9vw) calc(var(--m)*2.1vw);
+  padding: 0.9rem 2.1rem;
   margin: 0 1.7vw 3vw 0;
 }
 #slider .cont > div > a:hover {
@@ -250,7 +247,7 @@ body a {
 }
 #services .fotorama .fotorama__wrap {
   position: absolute;
-  top: calc(10.1vw/var(--m));
+  top: 10.1vw;
   left: 49.2vw;
 }
 #services .fotorama .fotorama__stage {
@@ -273,11 +270,11 @@ body a {
 }
 #services .fotorama .cont > h1 {
   position: absolute;
-  top: calc(6.5vw/var(--m));
+  top: 6.5vw;
   margin: 0;
   font-family: BebasNeueBold;
   color: #ffffff;
-  font-size: calc(var(--m)*2.8vw);
+  font-size: 2.8vw;
   font-weight: 400;
 }
 #services .fotorama .cont > p {
@@ -286,13 +283,13 @@ body a {
   margin: 0;
   font-family: PT Sans;
   color: #858585;
-  font-size: calc(var(--m)*1.4vw);
+  font-size: 1.4vw;
   font-weight: 400;
   line-height: 2.45vw;
 }
 #collection {
   position: relative;
-  top: calc(2vw/var(--m));
+  top: 2vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -307,41 +304,46 @@ body a {
 #collection > .d0 > h1 {
   font-family: BebasNeueBold;
   color: #f5f5f5;
-  font-size: calc(var(--m)*2.8vw);
+  font-size: 2.8rem;
   font-weight: 400;
 }
 #collection > .d0 > div {
-  width: calc(var(--m)*11.7vw);
+  width: 11.7rem;
   display: flex;
   justify-content: space-between;
 }
 #collection > .d0 > div > p {
   font-family: PT Sans;
   color: #f5f5f5;
-  font-size: calc(var(--m)*1.2vw);
+  font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
   height: 0.7vw;
 }
 #collection > .collection-slider {
-  position: absolute;
-  top: calc(var(--m)*8.5vw);
-  width: calc(85vw/var(--m));
+  top: 1.6rem;
+  width: 85vw;
 }
 #collection > .collection-slider .d0 {
   border: 1px solid #2b2b2b;
   padding: 3vw 0 2.5vw 0;
   margin: 0 2vw;
   display: flex;
-  flex-direction: var(--f-d);
+  flex-direction: column;
   align-items: center;
-  justify-content: var(--j-c);
+  justify-content: space-between;
   height: 31vw;
 }
+@media screen and (max-width: 800px) {
+  #collection > .collection-slider .d0 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 #collection > .collection-slider .d0 > img {
-  height: calc(var(--m)*23.4vw);
-  width: calc(var(--m)*15vw);
+  height: 23.4rem;
+  width: 15rem;
 }
 #collection > .collection-slider .d0 > div {
   display: flex;
@@ -354,19 +356,19 @@ body a {
   margin: 0;
   font-family: BebasNeueBold;
   color: #f5f5f5;
-  font-size: calc(var(--m)*1.8vw);
+  font-size: 1.8rem;
   font-weight: 400;
 }
 #collection > .collection-slider .d0 > div .p1 {
   margin: 0;
   font-family: PT Sans;
   color: #b6907e;
-  font-size: calc(var(--m)*1.4vw);
+  font-size: 1.4rem;
   font-weight: 700;
 }
 #brand {
   position: relative;
-  top: 44.5vw;
+  top: 7.9vw;
   display: flex;
   align-items: center;
   height: 16.2vw;
@@ -380,7 +382,7 @@ body a {
 }
 #say {
   position: relative;
-  top: 46.9vw;
+  top: 10.3vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -388,43 +390,48 @@ body a {
 #say > h1 {
   font-family: BebasNeueBold;
   color: #ffffff;
-  font-size: calc(var(--m)*2.8vw);
+  font-size: 2.8rem;
   font-weight: 400;
 }
 #say > .say-slider {
-  position: absolute;
-  top: 12.1vw;
+  top: 5.2vw;
   width: 81vw;
 }
 #say > .say-slider .d0 {
   display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+  #say > .say-slider .d0 {
+    justify-content: space-around;
+  }
 }
 #say > .say-slider .d0 > img {
-  height: calc(var(--m)*6.9vw);
-  width: calc(var(--m)*6.9vw);
+  height: 6.9rem;
+  width: 6.9rem;
   border-radius: 0.3vw;
 }
 #say > .say-slider .d0 > div {
-  margin: 0 0 0 3.4vw;
+  width: 30rem;
 }
 #say > .say-slider .d0 > div > h2 {
   font-family: BebasNeueBold;
   color: #ffffff;
-  font-size: calc(var(--m)*2vw);
+  font-size: 2rem;
   font-weight: 400;
   margin: 1.4vw 0 0 0;
 }
 #say > .say-slider .d0 > div > p {
   font-family: PT Sans;
   color: #767676;
-  font-size: calc(var(--m)*1vw);
+  font-size: 1rem;
   font-weight: 400;
   line-height: 2.1vw;
   margin: 1.6vw 8.9vw 0 0;
 }
 #footer {
   position: relative;
-  top: 78.8vw;
+  top: 26.7vw;
   height: 26.7vw;
   background-color: #0e0e0e;
 }
@@ -464,7 +471,7 @@ body a {
 #footer > div .d0 .menu > h1 {
   font-family: BebasNeueBold;
   color: #ffffff;
-  font-size: 1.7vw;
+  font-size: 1.7rem;
   font-weight: 400;
   margin: 0 0 2.5vw 0;
 }
@@ -479,7 +486,7 @@ body a {
 #footer > div .d0 .menu > div > div > a {
   font-family: BebasNeueBold;
   color: #5e5d5d;
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 400;
   margin: 0 0 1.6vw 0;
 }
@@ -490,7 +497,7 @@ body a {
 #footer > div .d0 .cont > h1 {
   font-family: BebasNeueBold;
   color: #ffffff;
-  font-size: 1.7vw;
+  font-size: 1.7rem;
   font-weight: 400;
   margin: 0 0 2.1vw 0;
 }
@@ -502,7 +509,7 @@ body a {
 #footer > div .d1 > p {
   font-family: PT Sans;
   color: #494949;
-  font-size: 0.95vw;
+  font-size: 0.95rem;
   font-weight: 400;
 }
 #footer > div .d1 > div {
@@ -510,7 +517,7 @@ body a {
   align-items: center;
 }
 #footer > div .d1 > div > img {
-  width: 1vw;
+  width: 1rem;
   margin: 0 0 0 1.3vw;
 }
 .form {
@@ -521,7 +528,7 @@ body a {
 .form > div {
   display: flex;
   justify-content: flex-end;
-  margin: 0 0 calc(var(--m)*2vw) 0;
+  margin: 0 0 2rem 0;
   width: 100%;
 }
 .form > div > input {
@@ -529,9 +536,9 @@ body a {
   border: 1px solid #494949;
   font-family: PT Sans;
   color: #ffffff;
-  font-size: calc(var(--m)*1vw);
+  font-size: 1rem;
   font-weight: 400;
-  padding: calc(var(--m)*0.8vw) calc(var(--m)*1.7vw);
+  padding: 0.8rem 1.7rem;
 }
 .form > div > input::placeholder {
   color: #494949;
@@ -539,18 +546,18 @@ body a {
 .form > div > label {
   font-family: PT Sans;
   color: #ffffff;
-  font-size: calc(var(--m)*1vw);
+  font-size: 1rem;
   font-weight: 400;
-  padding: calc(var(--m)*0.8vw) calc(var(--m)*0.5vw) calc(var(--m)*0.8vw) 0;
+  padding: 0.8rem 0.5rem 0.8rem 0;
 }
 .form > div > button {
   background-color: #b6907e;
   border: none;
   font-family: BebasNeueBold;
   color: #705142;
-  font-size: calc(var(--m)*1.3vw);
+  font-size: 1.3rem;
   font-weight: 400;
-  padding: calc(var(--m)*0.8vw) calc(var(--m)*3.4vw);
+  padding: 0.8rem 3.4rem;
 }
 .form > div > button:hover {
   background-color: #c8ac9f;
@@ -573,11 +580,11 @@ body a {
 }
 .modal > div > form {
   background-color: #0e0e0e;
-  padding: calc(var(--m)*2vw) calc(var(--m)*2vw) 0 calc(var(--m)*2vw);
+  padding: 2rem 2rem 0 2rem;
 }
 .modal-btn {
   cursor: pointer;
 }
 #latest-btn {
-  border-bottom: 0.7vw solid #b6907e;
+  border-bottom: 0.7rem solid #b6907e;
 }
