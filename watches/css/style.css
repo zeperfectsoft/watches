@@ -33,7 +33,7 @@
 * :after {
   box-sizing: border-box;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   * {
     font-size: 2vw;
   }
@@ -96,7 +96,7 @@ body a {
   justify-content: flex-end;
   padding: 0 8.9vw;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   #slider .sub {
     height: 5.6vw;
   }
@@ -188,7 +188,7 @@ body a {
   align-items: flex-start;
   margin: 3.3vw 0 0 0;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   #slider .cont > div {
     flex-direction: column;
   }
@@ -330,7 +330,7 @@ body a {
   justify-content: space-between;
   height: 31vw;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   #collection > .collection-slider .d0 {
     flex-direction: row;
     justify-content: space-around;
@@ -340,7 +340,7 @@ body a {
   height: 23.4vw;
   width: 15vw;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   #collection > .collection-slider .d0 > img {
     height: 32.76vw;
     width: 21vw;
@@ -416,7 +416,7 @@ body a {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   #say > .say-slider .d0 {
     justify-content: space-around;
   }
