@@ -96,6 +96,11 @@ body a {
   justify-content: flex-end;
   padding: 0 8.9vw;
 }
+@media screen and (max-width: 800px) {
+  #slider .sub {
+    height: 5.6vw;
+  }
+}
 #slider .sub img {
   width: 1.2rem;
 }
