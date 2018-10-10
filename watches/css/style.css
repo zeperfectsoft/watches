@@ -52,7 +52,7 @@ body a {
 }
 #slider .fotorama .fotorama__nav {
   right: 37.8vw;
-  bottom: 3.5vw;
+  bottom: 5vw;
 }
 #slider .fotorama .fotorama__nav-wrap {
   height: 0;
@@ -94,22 +94,18 @@ body a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding: 0 8.9vw;
 }
-#slider .sub > div {
-  margin: 0 8.9vw 0 0;
-  display: flex;
-  align-items: center;
-}
-#slider .sub > div img {
+#slider .sub img {
   width: 1.2rem;
 }
-#slider .sub > div > div {
+#slider .sub > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 3.3rem;
 }
-#slider .sub > div > div > p {
+#slider .sub > div > p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,7 +122,7 @@ body a {
 }
 #slider .header {
   position: absolute;
-  top: 5.9vw;
+  top: 5vw;
   right: 8.9vw;
   left: 8.9vw;
   display: flex;
@@ -169,7 +165,7 @@ body a {
 }
 #slider .cont {
   position: absolute;
-  top: 17vw;
+  top: 15vw;
   left: 8.9vw;
   display: flex;
   flex-direction: column;
