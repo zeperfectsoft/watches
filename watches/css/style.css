@@ -58,20 +58,20 @@ body a {
   height: 0;
 }
 #slider .fotorama .fotorama__nav__frame {
-  margin: 0 0.2vw;
+  margin: 0 0.2rem;
 }
 #slider .fotorama .fotorama__dot {
   border: 0;
   border-radius: 50%;
-  width: 0.7vw;
-  height: 0.7vw;
+  width: 0.7rem;
+  height: 0.7rem;
   background-color: rgba(182, 144, 126, 0.5);
 }
 #slider .fotorama .fotorama__active .fotorama__dot {
   border: 0;
   border-radius: 50%;
-  width: 0.7vw;
-  height: 0.7vw;
+  width: 0.7rem;
+  height: 0.7rem;
   background-color: #b6907e;
 }
 #slider .fotorama .fotorama__wrap:after {
@@ -98,7 +98,7 @@ body a {
 }
 @media screen and (max-width: 1000px) {
   #slider .sub {
-    height: 5.6vw;
+    height: 2.8rem;
   }
 }
 #slider .sub img {
@@ -226,23 +226,38 @@ body a {
   top: 10.1vw;
   left: 49.2vw;
 }
+@media screen and (max-width: 1000px) {
+  #services .fotorama .fotorama__wrap {
+    top: 1.68333333rem;
+  }
+}
 #services .fotorama .fotorama__stage {
-  height: 43vw;
+  height: 45vw;
 }
 #services .fotorama .fotorama__arr--prev {
   background: url('../img/services/cont/1.svg') no-repeat center;
   top: 4vw;
-  height: 1.5vw;
-  width: 1.5vw;
+  height: 1.5rem;
+  width: 1.5rem;
   background-size: contain;
 }
+@media screen and (max-width: 1000px) {
+  #services .fotorama .fotorama__arr--prev {
+    top: 1.6rem;
+  }
+}
 #services .fotorama .fotorama__arr--next {
-  left: 3.7vw;
+  left: 3.7rem;
   background: url('../img/services/cont/2.svg') no-repeat center;
   top: 4vw;
-  height: 1.5vw;
-  width: 1.5vw;
+  height: 1.5rem;
+  width: 1.5rem;
   background-size: contain;
+}
+@media screen and (max-width: 1000px) {
+  #services .fotorama .fotorama__arr--next {
+    top: 1.6rem;
+  }
 }
 #services .fotorama .cont > h1 {
   position: absolute;
@@ -253,6 +268,12 @@ body a {
   font-size: 2.8vw;
   font-weight: 400;
 }
+@media screen and (max-width: 1000px) {
+  #services .fotorama .cont > h1 {
+    top: 2.6rem;
+    font-size: 1.68rem;
+  }
+}
 #services .fotorama .cont > p {
   position: absolute;
   top: 10.8vw;
@@ -262,6 +283,12 @@ body a {
   font-size: 1.4vw;
   font-weight: 400;
   line-height: 2.45vw;
+}
+@media screen and (max-width: 1000px) {
+  #services .fotorama .cont > p {
+    top: 5.4rem;
+    font-size: 1.05rem;
+  }
 }
 #collection {
   position: relative;
@@ -342,8 +369,8 @@ body a {
 }
 @media screen and (max-width: 1000px) {
   #collection > .collection-slider .d0 > img {
-    height: 32.76vw;
-    width: 21vw;
+    height: 16.38rem;
+    width: 10.5rem;
   }
 }
 #collection > .collection-slider .d0 > div {
@@ -401,13 +428,18 @@ body a {
 #say > .say-slider .owl-dot {
   border: 0;
   border-radius: 50%;
-  width: 0.7vw;
-  height: 0.7vw;
+  width: 0.7rem;
+  height: 0.7rem;
   background-color: rgba(182, 144, 126, 0.5);
   position: relative;
   top: 5.1vw;
   left: 38.8vw;
-  margin: 0 0.5vw;
+  margin: 0 0.5rem;
+}
+@media screen and (max-width: 1000px) {
+  #say > .say-slider .owl-dot {
+    left: 16.86956522rem;
+  }
 }
 #say > .say-slider .owl-dots .active {
   background-color: #b6907e;
@@ -424,7 +456,7 @@ body a {
 #say > .say-slider .d0 > img {
   height: 6.9rem;
   width: 6.9rem;
-  border-radius: 0.3vw;
+  border-radius: 0.3rem;
 }
 #say > .say-slider .d0 > div {
   width: 30rem;
@@ -441,7 +473,7 @@ body a {
   color: #767676;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 2.1vw;
+  line-height: 2.1rem;
   margin: 1.6vw 8.9vw 0 0;
 }
 #footer {
