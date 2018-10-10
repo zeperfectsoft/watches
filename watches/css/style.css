@@ -127,7 +127,7 @@ body a {
 }
 #slider .header {
   position: absolute;
-  top: 5vw;
+  top: 4vw;
   right: 8.9vw;
   left: 8.9vw;
   display: flex;
@@ -170,7 +170,7 @@ body a {
 }
 #slider .cont {
   position: absolute;
-  top: 15vw;
+  top: 14vw;
   left: 8.9vw;
   display: flex;
   flex-direction: column;
