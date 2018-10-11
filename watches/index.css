@@ -27,6 +27,7 @@
   font-style: italic;
 }
 * {
+  font-family: sans-serif;
   font-size: 1vw;
 }
 * :before,
@@ -50,31 +51,7 @@ body a {
 #slider {
   position: relative;
 }
-#slider .fotorama .fotorama__nav {
-  right: 37.8vw;
-  bottom: 5vw;
-}
-#slider .fotorama .fotorama__nav-wrap {
-  height: 0;
-}
-#slider .fotorama .fotorama__nav__frame {
-  margin: 0 0.2rem;
-}
-#slider .fotorama .fotorama__dot {
-  border: 0;
-  border-radius: 50%;
-  width: 0.7rem;
-  height: 0.7rem;
-  background-color: rgba(182, 144, 126, 0.5);
-}
-#slider .fotorama .fotorama__active .fotorama__dot {
-  border: 0;
-  border-radius: 50%;
-  width: 0.7rem;
-  height: 0.7rem;
-  background-color: #b6907e;
-}
-#slider .fotorama .fotorama__wrap:after {
+#slider > .slider:after {
   display: block;
   position: absolute;
   top: 0;
@@ -83,6 +60,29 @@ body a {
   right: 0;
   background-image: linear-gradient(to right, #000000, rgba(0, 0, 0, 0));
   content: '';
+}
+#slider > .slider .owl-dot {
+  position: relative;
+  border: 0;
+  border-radius: 50%;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin: 0 0.5rem;
+  background-color: rgba(182, 144, 126, 0.5);
+  bottom: 6vw;
+  left: 10vw;
+  z-index: 5;
+}
+@media screen and (max-width: 1000px) {
+  #slider > .slider .owl-dot {
+    bottom: 4vw;
+  }
+}
+#slider > .slider .owl-dots {
+  height: 0;
+}
+#slider > .slider .owl-dots .active {
+  background-color: #b6907e;
 }
 #slider .sub {
   background-color: #0e0e0e;
@@ -95,6 +95,7 @@ body a {
   align-items: center;
   justify-content: flex-end;
   padding: 0 8.9vw;
+  z-index: 5;
 }
 @media screen and (max-width: 1000px) {
   #slider .sub {
@@ -133,13 +134,19 @@ body a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 5;
 }
 #slider .header .menu {
-  width: 24rem;
+  width: 35vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  #slider .header .menu {
+    width: 23.33333333rem;
+  }
 }
 #slider .header .menu > a {
   font-family: BebasNeueBold;
@@ -174,6 +181,7 @@ body a {
   left: 8.9vw;
   display: flex;
   flex-direction: column;
+  z-index: 5;
 }
 #slider .cont > h1 {
   margin: 0;
@@ -221,45 +229,49 @@ body a {
   background-image: linear-gradient(to left, #000000, rgba(0, 0, 0, 0));
   content: '';
 }
-#services .fotorama .fotorama__wrap {
+#services > .services-slider {
   position: absolute;
   top: 10.1vw;
   left: 49.2vw;
 }
 @media screen and (max-width: 1000px) {
-  #services .fotorama .fotorama__wrap {
+  #services > .services-slider {
     top: 1.68333333rem;
   }
 }
-#services .fotorama .fotorama__stage {
+#services > .services-slider span {
+  display: none;
+}
+#services > .services-slider .owl-prev {
+  position: absolute;
+  top: 2.9vw;
+  height: 1.5rem;
+  width: 1.7rem;
+  background: url('../img/services/cont/1.svg') no-repeat left;
+}
+@media screen and (max-width: 1000px) {
+  #services > .services-slider .owl-prev {
+    top: 0.41428571rem;
+  }
+}
+#services > .services-slider .owl-next {
+  position: absolute;
+  top: 2.9vw;
+  height: 1.5rem;
+  width: 1.7rem;
+  background: url('../img/services/cont/2.svg') no-repeat right;
+  right: -4vw;
+  left: 3.7rem;
+}
+@media screen and (max-width: 1000px) {
+  #services > .services-slider .owl-next {
+    top: 0.41428571rem;
+  }
+}
+#services > .services-slider .cont {
   height: 45vw;
 }
-#services .fotorama .fotorama__arr--prev {
-  background: url('../img/services/cont/1.svg') no-repeat center;
-  top: 4vw;
-  height: 1.5rem;
-  width: 1.5rem;
-  background-size: contain;
-}
-@media screen and (max-width: 1000px) {
-  #services .fotorama .fotorama__arr--prev {
-    top: 1.6rem;
-  }
-}
-#services .fotorama .fotorama__arr--next {
-  left: 3.7rem;
-  background: url('../img/services/cont/2.svg') no-repeat center;
-  top: 4vw;
-  height: 1.5rem;
-  width: 1.5rem;
-  background-size: contain;
-}
-@media screen and (max-width: 1000px) {
-  #services .fotorama .fotorama__arr--next {
-    top: 1.6rem;
-  }
-}
-#services .fotorama .cont > h1 {
+#services > .services-slider .cont > h1 {
   position: absolute;
   top: 6.5vw;
   margin: 0;
@@ -269,15 +281,16 @@ body a {
   font-weight: 400;
 }
 @media screen and (max-width: 1000px) {
-  #services .fotorama .cont > h1 {
+  #services > .services-slider .cont > h1 {
     top: 2.6rem;
     font-size: 1.68rem;
   }
 }
-#services .fotorama .cont > p {
+#services > .services-slider .cont > p {
   position: absolute;
   top: 10.8vw;
   margin: 0;
+  width: 41vw;
   font-family: PT Sans;
   color: #858585;
   font-size: 1.4vw;
@@ -285,7 +298,7 @@ body a {
   line-height: 2.45vw;
 }
 @media screen and (max-width: 1000px) {
-  #services .fotorama .cont > p {
+  #services > .services-slider .cont > p {
     top: 5.4rem;
     font-size: 1.05rem;
   }
@@ -426,15 +439,15 @@ body a {
   width: 81vw;
 }
 #say > .say-slider .owl-dot {
+  position: relative;
   border: 0;
   border-radius: 50%;
   width: 0.7rem;
   height: 0.7rem;
+  margin: 0 0.5rem;
   background-color: rgba(182, 144, 126, 0.5);
-  position: relative;
   top: 5.1vw;
   left: 38.8vw;
-  margin: 0 0.5rem;
 }
 @media screen and (max-width: 1000px) {
   #say > .say-slider .owl-dot {

@@ -31,21 +31,12 @@
 	</script>
 	<noscript><div><img src="https://mc.yandex.ru/watch/50363707" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="normalize/normalize.css">
+	<link rel="stylesheet" href="index.css">
 </head>
 <body>
 	<div id="slider">
-		<div
-			class="fotorama"
-			data-transition="crossfade"
-			data-autoplay="true"
-			data-stopautoplayontouch="false"
-			data-loop="true"
-			data-arrows="false"
-			data-click="false"
-			data-swipe="false"
-			data-trackpad="false">
+		<div class="slider owl-carousel">
 			<img src="img/slider/bg/1.jpg">
 			<img src="img/slider/bg/2.jpg">
 		</div>
@@ -109,16 +100,7 @@
 		<div class="bg">
 			<img src="img/services/bg/1.jpg" alt="">
 		</div>
-		<div
-			class="fotorama"
-			data-width="41%"
-			data-transition="crossfade"
-			data-autoplay="false"
-			data-nav="false"
-			data-arrows="always"
-			data-click="false"
-			data-swipe="false"
-			data-trackpad="false">
+		<div class="services-slider owl-carousel">
 			<div class="cont">
 				<h1>Our Store</h1>
 				<p>As many of you know, our company has a wide field of activity: we are engaged in the development of products, publish design and code related articles, and support the Market, where designers publish their products to sell. FS Industrie is created for digital designs where flexibility is essential. Designed by Phil Garnham and Fernando Mello, the font combines aesthetics with functional utility, delivering a precise and direct feel.</p>					
@@ -298,14 +280,27 @@
 			</div>
 		</div>
 	</div>
-	<link rel="stylesheet" href="css/fotorama.css">
 	<link rel="stylesheet" href="owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="owl-carousel/owl.theme.default.min.css">
 	<script src="jquery/jquery-3.3.1.min.js"></script>
-	<script src="js/fotorama.js"></script>
 	<script src="owl-carousel/owl.carousel.min.js"></script>
 	<script>
 		$(document).ready(function() {
+			$(".slider").owlCarousel( {
+				nav: false,
+				dots: true,
+				loop: true,
+				items: 1,
+				animateOut: 'fadeOut',
+				autoplay: true,
+				autoplayTimeout: 5000
+			});
+			$(".services-slider").owlCarousel( {
+				nav: true,
+				dots: true,
+				loop: true,
+				items: 1,
+				animateOut: 'fadeOut',
+			});
 			$(".collection-slider").owlCarousel( {
 				nav: true,
 				dots: false,
@@ -316,7 +311,7 @@
 					},
 					1001: {
 						items: 3
-					},
+					}
 				}
 			});
 			$(".say-slider").owlCarousel( {
@@ -329,7 +324,7 @@
 					},
 					1001: {
 						items: 2
-					},
+					}
 				}
 			});
 			$('#popular').hide();
@@ -345,13 +340,13 @@
 			});
 			$('#latest-btn').click(function() {
 				$('#popular-btn').css('border', 'none');
-				$('#latest-btn').css('border-bottom', '0.7vw solid #b6907e');
+				$('#latest-btn').css('border-bottom', '0.7rem solid #b6907e');
 				$('#popular').fadeOut('fast');
 				$('#latest').fadeIn('fast');
 			});
 			$('#popular-btn').click(function() {
 				$('#latest-btn').css('border', 'none');
-				$('#popular-btn').css('border-bottom', '0.7vw solid #b6907e');
+				$('#popular-btn').css('border-bottom', '0.7rem solid #b6907e');
 				$('#latest').fadeOut('fast');
 				$('#popular').fadeIn('fast');
 			});
