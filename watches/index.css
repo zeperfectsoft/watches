@@ -1,28 +1,28 @@
 @font-face {
   font-family: 'BebasNeueBold';
-  src: url('../font/BebasNeueBold.eot');
-  src: url('../font/BebasNeueBold.eot?#iefix') format('embedded-opentype'), url('../font/BebasNeueBold.woff2') format('woff2'), url('../font/BebasNeueBold.woff') format('woff'), url('../font/BebasNeueBold.ttf') format('truetype'), url('../font/BebasNeueBold.svg#BebasNeueBold') format('svg');
+  src: url('font/BebasNeueBold.eot');
+  src: url('font/BebasNeueBold.eot?#iefix') format('embedded-opentype'), url('font/BebasNeueBold.woff2') format('woff2'), url('font/BebasNeueBold.woff') format('woff'), url('font/BebasNeueBold.ttf') format('truetype'), url('font/BebasNeueBold.svg#BebasNeueBold') format('svg');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'PT Sans';
-  src: url('../font/PTSans-Regular.eot');
-  src: url('../font/PTSans-Regular.eot?#iefix') format('embedded-opentype'), url('../font/PTSans-Regular.woff2') format('woff2'), url('../font/PTSans-Regular.woff') format('woff'), url('../font/PTSans-Regular.ttf') format('truetype'), url('../font/PTSans-Regular.svg#PTSans-Regular') format('svg');
+  src: url('font/PTSans-Regular.eot');
+  src: url('font/PTSans-Regular.eot?#iefix') format('embedded-opentype'), url('font/PTSans-Regular.woff2') format('woff2'), url('font/PTSans-Regular.woff') format('woff'), url('font/PTSans-Regular.ttf') format('truetype'), url('font/PTSans-Regular.svg#PTSans-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PT Sans';
-  src: url('../font/PTSans-Bold.eot');
-  src: url('../font/PTSans-Bold.eot?#iefix') format('embedded-opentype'), url('../font/PTSans-Bold.woff2') format('woff2'), url('../font/PTSans-Bold.woff') format('woff'), url('../font/PTSans-Bold.ttf') format('truetype'), url('../font/PTSans-Bold.svg#PTSans-Bold') format('svg');
+  src: url('font/PTSans-Bold.eot');
+  src: url('font/PTSans-Bold.eot?#iefix') format('embedded-opentype'), url('font/PTSans-Bold.woff2') format('woff2'), url('font/PTSans-Bold.woff') format('woff'), url('font/PTSans-Bold.ttf') format('truetype'), url('font/PTSans-Bold.svg#PTSans-Bold') format('svg');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'PT Sans';
-  src: url('../font/PTSans-Italic.eot');
-  src: url('../font/PTSans-Italic.eot?#iefix') format('embedded-opentype'), url('../font/PTSans-Italic.woff2') format('woff2'), url('../font/PTSans-Italic.woff') format('woff'), url('../font/PTSans-Italic.ttf') format('truetype'), url('../font/PTSans-Italic.svg#PTSans-Italic') format('svg');
+  src: url('font/PTSans-Italic.eot');
+  src: url('font/PTSans-Italic.eot?#iefix') format('embedded-opentype'), url('font/PTSans-Italic.woff2') format('woff2'), url('font/PTSans-Italic.woff') format('woff'), url('font/PTSans-Italic.ttf') format('truetype'), url('font/PTSans-Italic.svg#PTSans-Italic') format('svg');
   font-weight: normal;
   font-style: italic;
 }
