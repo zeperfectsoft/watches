@@ -246,7 +246,7 @@ body a {
   top: 2.9vw;
   height: 1.5rem;
   width: 1.7rem;
-  background: url('../img/services/cont/1.svg') no-repeat left;
+  background: url('img/services/cont/1.svg') no-repeat left;
 }
 @media screen and (max-width: 1000px) {
   #services > .services-slider .owl-prev {
@@ -258,7 +258,7 @@ body a {
   top: 2.9vw;
   height: 1.5rem;
   width: 1.7rem;
-  background: url('../img/services/cont/2.svg') no-repeat right;
+  background: url('img/services/cont/2.svg') no-repeat right;
   right: -4vw;
   left: 3.7rem;
 }
@@ -348,7 +348,7 @@ body a {
   top: 17.1vw;
   height: 2.5vw;
   width: 3vw;
-  background: url('../img/collection/arrow/1.svg') no-repeat left;
+  background: url('img/collection/arrow/1.svg') no-repeat left;
   left: -4vw;
 }
 #collection > .collection-slider .owl-next {
@@ -356,7 +356,7 @@ body a {
   top: 17.1vw;
   height: 2.5vw;
   width: 3vw;
-  background: url('../img/collection/arrow/2.svg') no-repeat right;
+  background: url('img/collection/arrow/2.svg') no-repeat right;
   right: -4vw;
 }
 #collection > .collection-slider .d0 {
