@@ -47,6 +47,9 @@ body {
 body a {
   text-decoration: none;
 }
+body button {
+  outline: none;
+}
 #slider {
   position: relative;
 }
@@ -239,33 +242,21 @@ body a {
     top: 1.68333333rem;
   }
 }
-#services > .services-slider span {
-  display: none;
-}
-#services > .services-slider .owl-prev {
+#services > .services-slider .owl-nav {
   position: absolute;
-  top: 2.9vw;
+  top: 2.8vw;
+  width: 5.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+#services > .services-slider .owl-nav .owl-prev > img,
+#services > .services-slider .owl-nav .owl-next > img {
   height: 1.5rem;
-  width: 1.7rem;
-  background: url('img/services/cont/1.svg') no-repeat left;
+  width: 1.5rem;
 }
 @media screen and (max-width: 1000px) {
-  #services > .services-slider .owl-prev {
-    top: 0.41428571rem;
-  }
-}
-#services > .services-slider .owl-next {
-  position: absolute;
-  top: 2.9vw;
-  height: 1.5rem;
-  width: 1.7rem;
-  background: url('img/services/cont/2.svg') no-repeat right;
-  right: -4vw;
-  left: 3.7rem;
-}
-@media screen and (max-width: 1000px) {
-  #services > .services-slider .owl-next {
-    top: 0.41428571rem;
+  #services > .services-slider .owl-nav {
+    top: 0.4rem;
   }
 }
 #services > .services-slider .cont {
@@ -341,24 +332,19 @@ body a {
   top: 1.6rem;
   width: 85vw;
 }
-#collection > .collection-slider span {
-  display: none;
-}
-#collection > .collection-slider .owl-prev {
+#collection > .collection-slider .owl-nav {
   position: absolute;
   top: 17.1vw;
-  height: 2.5vw;
-  width: 3vw;
-  background: url('img/collection/arrow/1.svg') no-repeat left;
-  left: -4vw;
+  left: 0;
+  right: 0;
+  margin: 0 -4vw;
+  display: flex;
+  justify-content: space-between;
 }
-#collection > .collection-slider .owl-next {
-  position: absolute;
-  top: 17.1vw;
+#collection > .collection-slider .owl-nav .owl-prev > img,
+#collection > .collection-slider .owl-nav .owl-next > img {
   height: 2.5vw;
   width: 3vw;
-  background: url('img/collection/arrow/2.svg') no-repeat right;
-  right: -4vw;
 }
 #collection > .collection-slider .d0 {
   border: 1px solid #2b2b2b;
